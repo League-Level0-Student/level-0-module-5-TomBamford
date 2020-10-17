@@ -8,33 +8,47 @@ import javax.swing.JOptionPane;
 
 public class GoofyNames {
 	public static void main(String[] args) {
-		String goofyName = JOptionPane.showInputDialog("What is your name?");
-		int n = Integer.parseInt(goofyName);
-		System.out.println(goofyName.toUpperCase());
-		for (int i = 0; i < goofyName.length();) {
+		String goofyName = "";
+		String input = JOptionPane.showInputDialog("What is your name?");
+		// int n = Integer.parseInt(goofyName);
+		// System.out.println(goofyName.toUpperCase());
+
+		// String name = "Sam Wise";
+		// String lastName = name.substring(i,i +1);
+		// System.out.println(lastName);
+
+		for (int i = 0; i < input.length(); i++) {
+
+			String character = input.substring(i, i + 1);
 			
+			if (i % 2 == 0) {
+				character = character.toUpperCase();
+			} else {
+				character = character.toLowerCase();
+			}
+			
+			goofyName = goofyName + character;
 		}
+		System.out.println(goofyName);
+
 		// 1. Ask the user to enter their name
 
 		// 2. Print upper case name to the console using .toUpperCase()
-		//    Run your program to see that this works.
+		// Run your program to see that this works.
 
 		// 3. Loop through each character of the name (steps 4 - 6).
-		//    HINT: Use .length() to determine the number of characters in the String.
+		// HINT: Use .length() to determine the number of characters in the String.
 
-			// 4. Create a String variable to store the next character of the name
-			//    using .substring(start, end)
-			//    HINT: replace 'start' and 'end' to get String with character at i 
-			
-			// 5. Use MODULO to set this variable to upper case for EVEN characters
-			//    and lower case for ODD characters.
+		// 4. Create a String variable to store the next character of the name
+		// using .substring(start, end)
+		// HINT: replace 'start' and 'end' to get String with character at i
 
-			
-			// 6. ADD this String  (containing 1 char) to the goofyName String
+		// 5. Use MODULO to set this variable to upper case for EVEN characters
+		// and lower case for ODD characters.
 
-		
+		// 6. ADD this String (containing 1 char) to the goofyName String
+
 		// 7. Use pop-up to show user their Goofy name
 
 	}
 }
-
