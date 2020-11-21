@@ -18,6 +18,15 @@ public class Code4Life {
 	public static void main(String[] args) {
 		String input = JOptionPane.showInputDialog("How many hours have you spent coding this week?");
 		int hours = Integer.parseInt(input);
+		if (hours <= 2) {
+			JOptionPane.showMessageDialog(null, "Stop watching YouTube and write code instead");
+		}
+		else if (hours >= 3 && hours <=5) {
+			JOptionPane.showMessageDialog(null, "You are a Code Ninja");
+		}
+		else if (hours >= 5) {
+			displayBatman();
+		}
 	}
 	// 1. Ask the user how many hours they spent coding this week.
 
@@ -33,29 +42,29 @@ public class Code4Life {
 
 
 	
-//	private static void playBatmanTheme() {
-//	// NOTE: Download batman.wav from league-sounds on GitHub: https://github.com/jointheleague/league-sounds
-//	//	     Then put batman.wav into the "_2_code_4_life" project
-//	//       If you want to play a different audio, change the file name in the code below.
-//		if (canPlaySounds) {		
-//			File sound = new File("src/_04_practice/_2_code_4_life/batman.wav");
-//			if (sound.exists()) {
-//				new Thread(() -> {
-//				try {
-//					Clip clip = AudioSystem.getClip();
-//					clip.open(AudioSystem.getAudioInputStream(sound));
-//					clip.start();
-//					Thread.sleep(clip.getMicrosecondLength()/1000);
-//				}
-//				catch (Exception e) {
-//					System.out.println("Could not play this sound");
-//				}}).start();
-//	 		}
-//			else {
-//				System.out.println("File does not exist");
-//			}
-//		}
-//	}
+	private static void playBatmanTheme() {
+	// NOTE: Download batman.wav from league-sounds on GitHub: https://github.com/jointheleague/league-sounds
+	//	     Then put batman.wav into the "_2_code_4_life" project
+	//       If you want to play a different audio, change the file name in the code below.
+		if (canPlaySounds) {		
+			File sound = new File("src/_04_practice/_2_code_4_life/batman.wav");
+			if (sound.exists()) {
+				new Thread(() -> {
+				try {
+					Clip clip = AudioSystem.getClip();
+					clip.open(AudioSystem.getAudioInputStream(sound));
+					clip.start();
+					Thread.sleep(clip.getMicrosecondLength()/1000);
+				}
+				catch (Exception e) {
+					System.out.println("Could not play this sound");
+				}}).start();
+	 		}
+			else {
+				System.out.println("File does not exist");
+			}
+		}
+	}
 //	
 	private static void displayBatman() {		
 		ImageIcon icon = new ImageIcon("src/_04_practice/_2_code_4_life/batman.png");

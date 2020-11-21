@@ -66,8 +66,8 @@ public class skillpractice {
 		//	int max = 20;
 		//	int ran = rand.nextInt(max);
 		//	System.out.println(ran);
-		//	int maximum = 10;
-		//	int random = rand.nextInt(maximum);
+		//	int max2 = 10;
+		//	int random = rand.nextInt(max2);
 		//	System.out.println(random);
 
 		// Get another random number that is less than 10 and print it to the console
@@ -81,24 +81,24 @@ public class skillpractice {
 		}
 
 		void skill4() { // In a pop-up, ask the user for the city they live in
-			//String city = JOptionPane.showInputDialog("What city do you live in?");
-			//if (city.equalsIgnoreCase("San Diego")) {
-			//	JOptionPane.showMessageDialog(null, "You live in America's Finest City");
-			//}
-			//else {
-			//	JOptionPane.showMessageDialog(null, "Move to San Diego");
-			//}
-			
-			//int car = 2;
-			//if (car == 0) {
-			//	JOptionPane.showMessageDialog(null, "I bet you use public transportation");
-			//}
-			//else if (car == 1) {
-			//	JOptionPane.showMessageDialog(null, "2006 White Volvo XC90");
-			//}
-			//else {
-			//	JOptionPane.showMessageDialog(null, "The cars have" + " " + car * 4 + " " + "wheels total");
-			//}
+//			String city = JOptionPane.showInputDialog("What city do you live in?");
+//			if (city.equalsIgnoreCase("San Diego")) {
+//				JOptionPane.showMessageDialog(null, "You live in America's Finest City");
+//			}
+//			else {
+//				JOptionPane.showMessageDialog(null, "Move to San Diego");
+//			}
+//			
+//			int car = 2;
+//			if (car == 0) {
+//				JOptionPane.showMessageDialog(null, "I bet you use public transportation");
+//			}
+//			else if (car == 1) {
+//				JOptionPane.showMessageDialog(null, "2006 White Volvo XC90");
+//			}
+//			else {
+//				JOptionPane.showMessageDialog(null, "The cars have" + " " + car * 4 + " " + "wheels total");
+//			}
 
 		// If they answered "San Diego", tell them they live in America's Finest City
 
@@ -123,8 +123,8 @@ public class skillpractice {
 		}
 
 		void skill5() { // In a pop-up, ask the user for the name of their school	
-			String input = JOptionPane.showInputDialog("What is the name of your school?");
-			JOptionPane.showMessageDialog(null, input + " " + "is a fantastic school.");
+//			String input = JOptionPane.showInputDialog("What is the name of your school?");
+//			JOptionPane.showMessageDialog(null, input + " " + "is a fantastic school.");
 
 
 		// In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message.
