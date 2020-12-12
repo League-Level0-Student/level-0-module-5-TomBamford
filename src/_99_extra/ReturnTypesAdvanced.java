@@ -10,6 +10,16 @@ public class ReturnTypesAdvanced {
 	static Robot rob = new Robot();
 	
 	public static void main(String[] args) {
+		String sides = JOptionPane.showInputDialog("How many sides do you want your shape to have?");
+		int numSides = Integer.parseInt(sides);
+		boolean canMake = canMakeShape(numSides);
+		if (canMake == true) {
+			int degree  = calculateTurnAngle(numSides);
+			drawPolygon(numSides,degree);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, notEnoughSides());
+		}
 		//1. Ask the user how many sides they want their shape to be
 		
 		//2. Call canMakeShape() and save what is returned into a variable
@@ -21,9 +31,8 @@ public class ReturnTypesAdvanced {
 			//5. Use drawPolygon() to draw your shape
 		
 		//6. If the shape CANNOT be drawn 
-			
 			//7. Call notEnoughSides() and print out what is returned 
-	
+		
 	}
 	
 	static int calculateTurnAngle(int numSides) {

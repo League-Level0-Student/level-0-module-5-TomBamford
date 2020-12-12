@@ -2,6 +2,17 @@ package _99_extra;
 
 public class ReturnTypesPractice {
 	public static void main(String[] args) {
+		int x = method1();
+		double x2 = method2();
+		String x3 = method3();
+		char x4 = method4();
+		boolean x5 = method5();
+		System.out.println(x);
+		System.out.println(x2);
+		System.out.println(x3);
+		System.out.println(x4);
+		System.out.println(x5);
+		
 		// GOAL: Figure out what each of these hidden methods returns
 		// 1. Call each method
 		

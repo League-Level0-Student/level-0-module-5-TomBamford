@@ -7,6 +7,10 @@ public class ListOfGoals {
 	static int numberOfGoals = 0;
 	
 	public static void main(String[] args) {
+		createListOfGoals();
+		System.out.println(getListOfGoals());
+		System.out.println(getNumberOfGoals());
+		System.out.println(isManyGoals());
 		//1. Call the appropriate method to make your list of goals
 		
 		//2. Call the appropriate method to get your list of goals, 
@@ -17,7 +21,9 @@ public class ListOfGoals {
 		
 		//4. Call the appropriate method to see if you put a lot of goals,
 		//   if you did put a lot of goals use a pop-up to say "Wow that's a lot of goals! Awesome!"
-	
+		if (getNumberOfGoals() > 2) {
+			JOptionPane.showMessageDialog(null, "Wow that's a lot of goals! Awesome!");
+		}
 	}
 	
 	static void createListOfGoals() {
